@@ -1,60 +1,63 @@
 {{<beta_layout_fees}}
 {{$content}}
 <main id="content" role="main">
+<form name="fees">
   <header class="page-header">
     <h1 class="heading-large">Visa application fees</h1>
   </header>
   <div class="form-group">
     <legend for="options" class="form-label">Select a visa type</legend>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="General" class="block-label">
+      <input type="radio" id="General" name="visaType" data-storage="General visitors" value="yes">
       General visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Business" class="block-label">
+      <input type="radio" id="Business" name="visaType" data-storage="Business visitors" value="yes">
       Business visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Entertainer" class="block-label">
+      <input type="radio" id="Entertainer" name="visaType" data-storage="Entertainer visitors" value="yes">
       Entertainer visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Family" class="block-label">
+      <input type="radio" id="Family" name="visaType" data-storage="Family visitors" value="yes">
       Family visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="marriage" class="block-label">
+      <input type="radio" id="marriage" name="visaType" data-storage="Special visitors - marriage or civil partnership" value="yes">
       Special visitors - marriage or civil partnership
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="medical" class="block-label">
+      <input type="radio" id="medical" name="visaType" data-storage="Special visitors -private medical treatment" value="yes">
       Special visitors -private medical treatment
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Student" class="block-label">
+      <input type="radio" id="Student" name="visaType" data-storage="Special visitors -Student visitors and prospective students
+    </label>" value="yes">
       Special visitors -Student visitors and prospective students
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="parents" class="block-label">
+      <input type="radio" id="parents" name="visaType" data-storage="Special visitors -parents of children at school" value="yes">
       Special visitors -parents of children at school
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="child" class="block-label">
+      <input type="radio" id="child" name="visaType" data-storage="Special visitors -child visitors" value="yes">
       Special visitors -child visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Sports" class="block-label">
+      <input type="radio" id="Sports" name="visaType" data-storage="Sports visitor" value="yes">
       Sports visitor
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Course" class="block-label">
+      <input type="radio" id="Course" name="visaType" data-storage="Course F visitors" value="yes">
       Course F visitors
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="Visitors" class="block-label">
+      <input type="radio" id="Visitors" name="visaType" data-storage="Visitors in transit" value="yes">
       Visitors in transit
     </label>
   </div>
+</form>
     <a name="submit" class="button" href="sub-type">Next step</a>
   <h3 class="heading-medium">Previous Answers</h3>
   <div class="grid-row">
@@ -69,9 +72,9 @@
             Select the country you are making your application from
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Australia
+            <span class="playback-cell sentence-case" data-playback="nationality"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -87,9 +90,9 @@
             Select your visa category
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Visit
+            <span class="playback-cell sentence-case" data-playback="category"></span>
           </p>
         </div>
         <div class="column-quarter">

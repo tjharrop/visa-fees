@@ -4,16 +4,20 @@
   <header class="page-header">
     <h1 class="heading-large">Visa application fees</h1>
   </header>
-  <h3>You’re applying for a <strong>General Visit Visa (6 months or less)</strong> from <strong>Australia</strong>.</h3>
-  <p>The fee for this application is <strong>$166 (AUD)</strong></p>
-  <p>In January 2015, all applications for this type of visa received for all locations in Australia were processed <strong>within 10 days.</strong></p>
-  <p>For <strong>Adelaide, 94% of these applications took 5 days</strong> to process.</p>
-  <p>For <strong>Canbara, 66% of these applications took 5 days</strong> to process.</p>
-  <p>For<strong> Melbourne, 93% of these applications took 5 days</strong> to process.</p>
-  <p>For <strong>Perth, 94% of these applications took 5 days</strong> to process.</p>
-  <p>For <strong>Sydney, 31% of these applications took 5 days</strong> to process.</p>
+  <div class="playback-container" name="fees">
 
-  <p>Read the <a href="#">application guidance</a> for this type of visa.</p>
+    <h3>You’re applying for a <strong><span class="playback-cell sentence-case" data-playback="visaType"></span> - <span class="playback-cell sentence-case" data-playback="subType"></span></strong> from <strong><span class="playback-cell sentence-case" data-playback="nationality"></span></strong>.</h3>
+    <p>The fee for this application is <strong>$166 (AUD)</strong></p>
+    <p>In January 2015, all applications for this type of visa received for all locations in Australia were processed <strong>within 10 days.</strong></p>
+    <p>For <strong>Adelaide, 94% of these applications took 5 days</strong> to process.</p>
+    <p>For <strong>Canbara, 66% of these applications took 5 days</strong> to process.</p>
+    <p>For<strong> Melbourne, 93% of these applications took 5 days</strong> to process.</p>
+    <p>For <strong>Perth, 94% of these applications took 5 days</strong> to process.</p>
+    <p>For <strong>Sydney, 31% of these applications took 5 days</strong> to process.</p>
+
+    <p>Read the <a href="#">application guidance</a> for this type of visa.</p>
+
+  </div>
 
   <h3 class="heading-medium">Previous Answers</h3>
   <div class="grid-row">
@@ -28,9 +32,9 @@
             Select the country you are making your application from
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Australia
+            <span class="playback-cell sentence-case" data-playback="nationality"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -46,9 +50,9 @@
             Select your visa category
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Visit
+            <span class="playback-cell sentence-case" data-playback="category"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -64,9 +68,9 @@
             Select your visa type
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            General Visitors
+            <span class="playback-cell sentence-case" data-playback="visaType"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -82,9 +86,9 @@
             Select your visa sub-type
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            General Visitors (less than 6 months)
+            <span class="playback-cell sentence-case" data-playback="subType"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -99,5 +103,12 @@
     </div>
   </div>
 </main>
+
+<script type="text/javascript">
+$.getJSON( "/public/countries.json", function( data ) {
+  $("body").append(data);
+});
+</script>
+
 {{/content}}
 {{/beta_layout_fees}}

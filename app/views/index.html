@@ -1,7 +1,7 @@
 {{<beta_layout_fees}}
 
 {{$content}}
-
+<form name="fees">
 <main id="content" role="main">
   <header class="page-header">
     <h1 class="heading-large">Visa application fees</h1>
@@ -9,9 +9,9 @@
       <div class="col-md-6">
 
         <div class="form-group">
-          <label for="options" class="form-label">Select the country you are making your application from</label>
+          <label for="nationality" class="form-label">Select the country you are making your application from</label>
 
-          <select id="options" name="options" class="select-form-control " required="">
+          <select id="nationality" name="nationality" class="select-form-control " required="">
             <option value="">Select…</option>
             <option value="afghanistan">Afghanistan</option>
             <option value="albania">Albania</option>
@@ -234,6 +234,7 @@
   </header>
 
 </main>
+</form>
 
 {{/content}}
 {{/beta_layout_fees}}

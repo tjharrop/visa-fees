@@ -1,44 +1,46 @@
 {{<beta_layout_fees}}
 {{$content}}
 <main id="content" role="main">
+<form name="fees">
   <header class="page-header">
     <h1 class="heading-large">Visa application fees</h1>
   </header>
   <div class="form-group">
     <legend for="options" class="form-label">Select a visa category</legend>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="visit" class="block-label">
+      <input type="radio" id="visit" name="category" data-storage="Visit" value="Visit">
       Visit
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="work" class="block-label">
+      <input type="radio" id="work" name="category" data-storage="Work" value="yes">
       Work
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="family" class="block-label">
+      <input type="radio" id="family" name="category" data-storage="Join family" value="yes">
       Join family
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="study" class="block-label">
+      <input type="radio" id="study" name="category" data-storage="Study" value="yes">
       Study
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="transit" class="block-label">
+      <input type="radio" id="transit" name="category" data-storage="Transit" value="yes">
       Transit
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="dependencies" class="block-label">
+      <input type="radio" id="dependencies" name="category" data-storage="Crown dependencies" value="yes">
       Crown dependencies
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="settlement" class="block-label">
+      <input type="radio" id="settlement" name="category" data-storage="Settlement" value="yes">
       Settlement
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="other" class="block-label">
+      <input type="radio" id="other" name="category" data-storage="Other" value="yes">
       Other
     </label>
   </div>
+</form>
     <a name="submit" class="button" href="type">Next step</a>
   <h3 class="heading-medium">Previous Answers</h3>
   <div class="grid-row">
@@ -53,9 +55,9 @@
             Select the country you are making your application from
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Australia
+            <span class="playback-cell sentence-case" data-playback="nationality"></span>
           </p>
         </div>
         <div class="column-quarter">

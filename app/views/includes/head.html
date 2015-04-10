@@ -1,11 +1,17 @@
 <link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="/public/javascripts/form.storage.js"></script>
 <script type="text/javascript">
 // A $( document ).ready() block.
 $( document ).ready(function() {
   console.log( "its happening!" );
 
-  // JS GOES HERE
-
+  $(".hide-by-default").hide();
+  //write to local storage
+  $('form').storeForm();
+  //play back from local storage
+  $('.playback-container').getForm();
+    
 });
 </script>

@@ -1,28 +1,30 @@
 {{<beta_layout_fees}}
 {{$content}}
 <main id="content" role="main">
+<form name="fees">
   <header class="page-header">
     <h1 class="heading-large">Visa application fees</h1>
   </header>
   <div class="form-group">
     <legend for="options" class="form-label">Select a visa sub-type</legend>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="short" class="block-label">
+      <input type="radio" id="short" name="subType" data-storage="Short-term (up to 6 months, single or multiple entry)" value="short">
       Short-term (up to 6 months, single or multiple entry)
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="longer" class="block-label">
+      <input type="radio" id="longer" name="subType" data-storage="Longer-term (valid for up to 2 years)" value="yes">
       Longer-term (valid for up to 2 years)
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="longer-five" class="block-label">
+      <input type="radio" id="longer-five" name="subType" data-storage="Longer-term (valid for up to 5 years)" value="yes">
       Longer-term (valid for up to 5 years)
     </label>
-    <label for="inUK-yes" class="block-label">
-      <input type="radio" id="inUK-yes" name="isInUK" data-storage="yes" value="yes">
+    <label for="longer-ten" class="block-label">
+      <input type="radio" id="longer-ten" name="subType" data-storage="Longer-term (valid for up to 10 years)" value="yes">
       Longer-term (valid for up to 10 years)
     </label>
   </div>
+</form>
     <a name="submit" class="button" href="result">Next step</a>
   <h3 class="heading-medium">Previous Answers</h3>
   <div class="grid-row">
@@ -37,9 +39,9 @@
             Select the country you are making your application from
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Australia
+            <span class="playback-cell sentence-case" data-playback="nationality"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -55,9 +57,9 @@
             Select your visa category
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            Visit
+            <span class="playback-cell sentence-case" data-playback="category"></span>
           </p>
         </div>
         <div class="column-quarter">
@@ -73,9 +75,9 @@
             Select your visa type
           </p>
         </div>
-        <div class="column-quarter">
+        <div class="column-quarter playback-container" name="fees">
           <p>
-            General Visitors
+            <span class="playback-cell sentence-case" data-playback="visaType"></span>
           </p>
         </div>
         <div class="column-quarter">
